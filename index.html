@@ -91,15 +91,13 @@
       
      function addRegistration() {
        
-          // add track call
-      analytics.track("User Registered", {
-          plan: "Pro Annual",
-          accountType: "Facebook",
+          // add identify call
+      analytics.identify("User Registered", {
+  
         fname: reg_fname.value,
         lname: reg_lname.value,
         email: reg_email.value
       
-        
        });
                       }
       
