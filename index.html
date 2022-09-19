@@ -46,15 +46,27 @@
           
               <form id="task-form">
                 <div class="input-field">
-                <label for="task">task</label>
+                <label for="task">Task</label>
                 <input type="text" id="task"  name="task" placeholder="New Task">
-                <label for="type">type</label>
+                <label for="type">Type</label>
                   <input type="text" id="type" name="type" placeholder="Type">
-                  <label for="user">user</label>
+                  <label for="user">User</label>
                 <input type="text" id="user" name="user" placeholder="User">
                 
         
               <input type="submit" class="btn" value="AddTask">
+            
+            </div>
+              </form>
+    
+    
+    
+    <h3 class="card-track">REB's Track Call</h3>
+     <form id="track-form">
+     <div class="input-field">
+                <label for="track">Track</label>
+                <input type="text" id="Track"  name="track" placeholder="Track">
+     <input type="submit" class="btn" value="AddTrack">
             
             </div>
               </form>
@@ -76,6 +88,8 @@
       const task_type = document.querySelector('#type');
       const task_user = document.querySelector('#user');
       
+       const form_track = document.querySelector('#track-form');
+      const track_track_json = document.querySelector('#track');
       
             
             
@@ -88,6 +102,8 @@
         //Add task event
       form_task.addEventListener('submit',addTask);
       
+        //Add task event
+      form_track.addEventListener('submit',addTrack);
       
       
       
@@ -121,6 +137,21 @@
        });
        
         }
+      
+      
+      
+       function addTrack() {  
+       
+       // add task call
+      analytics.track("Track Sample", {
+  
+        sample: track_track_json.value,
+       });
+       
+        }   
+      
+      
+      
       
       
       
