@@ -73,16 +73,32 @@
             
             
       //load all event listeners
-
-  
-      
+      // Hellow world
       document.addEventListener("click", myFunction);
+      
+      
+      //Add registration event
+      form.addEventListener('submit',addRegistration);
+      
+      
+      
+      
+      
       
       function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
       
-     
+     function addRegistration() {
+       
+          // add track call
+      analytics.track("User Registered", {
+          plan: "Pro Annual",
+          accountType: "Facebook",\
+      
+        
+       }
+                      }
       
       
 
