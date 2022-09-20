@@ -81,16 +81,7 @@
     
     
     
-    
-    <h3 class="card-track">REB's Track Call</h3>
-     <form id="track-form">
-     <div class="input-field">
-                <label for="track">Track</label>
-                <input type="text" id="track"  name="track" placeholder="Track">
-     <input type="submit" class="btn" value="AddTrack">
-            
-            </div>
-              </form>
+     
     
     
     <script>
@@ -109,8 +100,7 @@
       const task_type = document.querySelector('#type');
       const task_user = document.querySelector('#user');
       
-      const form_track = document.querySelector('#track-form');
-      const track_track = document.querySelector('#track');
+      
       
       const form_trial = document.querySelector('#trial-form');     
       const trial_product = document.querySelector('#trial_product');     
@@ -126,8 +116,7 @@
         //Add task event
       form_task.addEventListener('submit',addTask);
       
-        //Add task event
-      form_track.addEventListener('submit',addTrack);
+     
       
       
       //Add trial request
@@ -168,23 +157,12 @@
         }
       
       
-      
-       function addTrack() {  
-       
-       // add task call
-      analytics.track("Track Sample", {
-  sample: track_track.value
-     
-           
-       });
-       
-        }   
-      
+
       
           function addTrial() {  
        
        // add task call
-      analytics.track("Tria Request", {
+      analytics.track("Trial Request", {
   
      Trial_Product: trial_product.value,
      Trial_Start_Date: trial_start_date.value,
