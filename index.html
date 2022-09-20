@@ -68,11 +68,11 @@
                 <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
                 <label for="trial_start_date">Trial Start Date</label>
                   <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
-                  <label for="trial_contact">User</label>
+                  <label for="trial_contact">Trial Contact</label>
                 <input type="text" id="trial_contact" name="trial_contact" placeholder="Trial Contact">
                 
         
-              <input type="submit" class="btn" value="AddTrialRequest">
+              <input type="submit" class="btn" value="Submit Trial Request">
             
             </div>
               </form>
@@ -109,10 +109,13 @@
       const task_type = document.querySelector('#type');
       const task_user = document.querySelector('#user');
       
-       const form_track = document.querySelector('#track-form');
+      const form_track = document.querySelector('#track-form');
       const track_track = document.querySelector('#track');
       
-            
+      const form_trial = document.querySelector('#trial-form');     
+      const trial_product = document.querySelector('#trial_product');     
+      const trial_start_date = document.querySelector('#trial_start_date');            
+      const trial_contact = document.querySelector('#trial_contact');     
             
    
       
@@ -125,6 +128,11 @@
       
         //Add task event
       form_track.addEventListener('submit',addTrack);
+      
+      
+      //Add trial request
+      form_trial.addEventListener('submit',addTrial);
+      
       
       
       
@@ -165,14 +173,25 @@
        
        // add task call
       analytics.track("Track Sample", {
-  
-        sample: track_track.value
+  sample: track_track.value
+     
+           
        });
        
         }   
       
       
-      
+          function addTrial() {  
+       
+       // add task call
+      analytics.track("Tria Request", {
+  
+     Trial_Product: trial_product.value,
+     Trial_Start_Date: trial_start_date.value,
+     Trial_Contact: trial_contact.value
+       });
+       
+        }  
       
       
       
