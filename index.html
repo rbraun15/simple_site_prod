@@ -23,7 +23,7 @@
 }
 form  { display: table;      }
 p     { display: table-row;  }
-label { display: table-cell; padding-right: 50px; }
+label { display: table-cell; padding: 10px 10px 10px 10px; }
 input { display: table-cell; }
     
     
@@ -43,27 +43,28 @@ input { display: table-cell; }
   <form id="registration-form">
     
       <div class="account-type">
-          <input type="radio" value="none" id="radioOne" name="account" checked/>
-          <label for="radioOne" class="radio">Personal</label>
-          <input type="radio" value="none" id="radioTwo" name="account" />
-          <label for="radioTwo" class="radio">Company</label>
+      
         
-        <br>
+               <p>
            <label for="reg_fname">First Name</label>
            <input type="text" id="reg_fname" name="reg_firstname" placeholder="First">
-        <br>
+           </p>
+               <p>
            <label for="reg_flname">Last Name</label>   
            <input type="text" id="reg_lname" name="reg_lastname" placeholder="Last">
-        <br>   
+           </p>
+               <p>   
            <label for="reg_email">Email</label>   
            <input type="text" id="reg_email" name="reg_email" placeholder="Email">
-        <br> 
+           </p>
+    <br>
+               <p>
         <input type="submit" class="btn" value="Submit">
-
+</p>
         </div>
       </form>
     
-    
+  <br>  
  <br>
             <h3 class="card-title">REB's Task List</h3>
           
@@ -88,7 +89,7 @@ input { display: table-cell; }
             </p>
             </div>
               </form>
-    
+     <br>
     <br>
     <h3 class="card-title">Trial Request</h3>
           
