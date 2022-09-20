@@ -23,7 +23,7 @@
 }
 form  { display: table;      }
 p     { display: table-row;  }
-label { display: table-cell; padding: 10px 10px 10px 10px; }
+label { display: table-cell; padding: 5px 10px 5px 10px; }
 input { display: table-cell; }
     
     
@@ -37,84 +37,81 @@ input { display: table-cell; }
   </title>
 </head>
   <body>
-  <h3>Registration</h3>
     
     
-  <form id="registration-form">
-    
+<h3>Registration</h3>  
+   <form id="registration-form">
       <div class="account-type">
-      
-        
-               <p>
-           <label for="reg_fname">First Name</label>
-           <input type="text" id="reg_fname" name="reg_firstname" placeholder="First">
+           <p>
+       <label for="reg_fname">First Name</label>
+       <input type="text" id="reg_fname" name="reg_firstname" placeholder="First">
            </p>
-               <p>
-           <label for="reg_flname">Last Name</label>   
-           <input type="text" id="reg_lname" name="reg_lastname" placeholder="Last">
+           <p>
+       <label for="reg_flname">Last Name</label>   
+       <input type="text" id="reg_lname" name="reg_lastname" placeholder="Last">
            </p>
-               <p>   
-           <label for="reg_email">Email</label>   
-           <input type="text" id="reg_email" name="reg_email" placeholder="Email">
+            <p>   
+       <label for="reg_email">Email</label>   
+       <input type="text" id="reg_email" name="reg_email" placeholder="Email">
            </p>
-    <br>
-               <p>
-        <input type="submit" class="btn" value="Submit">
-</p>
-        </div>
-      </form>
+           <br>
+           <p>
+       <input type="submit" class="btn" value="Submit">
+           </p>
+           </div>
+     </form>
     
-  <br>  
- <br>
-            <h3 class="card-title">REB's Task List</h3>
+           <br>  
+           <br>
+           
+   <h3 class="card-title">REB's Task List</h3>
           
-              <form id="task-form">
-                <div class="input-field">
-                  <p>
-                <label for="task">Task</label>
-                <input type="text" id="task"  name="task" placeholder="New Task">
-                 </p>
-               <p>
-                  <label for="type">Type</label>
-                  <input type="text" id="type" name="type" placeholder="Type">
-                  </p>
-               <p>
-                 <label for="user">User</label>
-                <input type="text" id="user" name="user" placeholder="User">
-                 </p>
-                <br>
-               <p>
-        
-              <input type="submit" class="btn" value="AddTask">
+       <form id="task-form">
+           <div class="input-field">
+           <p>
+       <label for="task">Task</label>
+       <input type="text" id="task"  name="task" placeholder="New Task">
+           </p>
+           <p>
+       <label for="type">Type</label>
+       <input type="text" id="type" name="type" placeholder="Type">
+           </p>
+           <p>
+       <label for="user">User</label>
+       <input type="text" id="user" name="user" placeholder="User">
+           </p>
+           <br>
+           <p>
+         <input type="submit" class="btn" value="AddTask">
+           </p>
+           </div>
+      </form>
+           
+           <br>
+           <br>
+    
+       <h3 class="card-title">Trial Request</h3>
+          
+       <form id="trial-form">
+           <div class="containers">
+           <p>
+          <label for="product">Trial Product</label> 
+          <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
+            </p>
+            <p>
+          <label for="trial_start_date">Trial Start Date</label>
+          <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
+            </p>
+            <p>
+          <label for="trial_contact">Trial Contact</label>
+          <input type="text" id="trial_contact" name="trial_contact" placeholder="Trial Contact">
+            </p>
+            <br>
+            <p>
+          <input type="submit" class="btn" value="Submit Trial Request">
             </p>
             </div>
-              </form>
-     <br>
-    <br>
-    <h3 class="card-title">Trial Request</h3>
-          
-              <form id="trial-form">
-             
-                <div class="containers">
-                  <p>
-                <label for="product">Trial Product</label> 
-                <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
-                  </p>
-                   <p>
-                <label for="trial_start_date">Trial Start Date</label>
-                <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
-               </p>
-               <p>
-                <label for="trial_contact">Trial Contact</label>
-                <input type="text" id="trial_contact" name="trial_contact" placeholder="Trial Contact">
-               </p>
-                  <br>
-               <p>
-               <input type="submit" class="btn" value="Submit Trial Request">
-               </p>
-            </div>
-               
-              </form>
+        </form>
     
 
     <script>     
