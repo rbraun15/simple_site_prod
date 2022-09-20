@@ -21,6 +21,13 @@
   width: 100%;
   clear: both;
 }
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+    
+    
+    
   </style>
   
   
@@ -79,7 +86,8 @@
     <h3 class="card-title">Trial Request</h3>
           
               <form id="trial-form">
-                <div class="container">
+                <p>
+                <div class="containers">
                 <label for="product">Trial Product</label> 
                 <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
                 <br>
@@ -92,6 +100,7 @@
                <input type="submit" class="btn" value="Submit Trial Request">
             
             </div>
+                </p>
               </form>
     
 
