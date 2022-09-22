@@ -82,24 +82,24 @@ h3 { text-align: center; }
            <br>  
            <br>
 <div class="forms">
-   <h3>Task List</h3>
-       <form id="task-form">
+   <h3>Product Info Request</h3>
+       <form id="product-form">
            <p>
-       <label for="task">Task</label>
-       <input type="text" id="task"  name="task" placeholder="New Task">
+       <label for="product">Product</label>
+       <input type="text" id="product"  name="product" placeholder="Product">
            </p>
            <p>
-       <label for="type">Type</label>
-       <input type="text" id="type" name="type" placeholder="Type">
+       <label for="type">Role</label>
+       <input type="text" id="role" name="role" placeholder="Role">
            </p>
            <p>
-       <label for="user">User</label>
-       <input type="text" id="user" name="user" placeholder="User">
+       <label for="user">Email</label>
+       <input type="text" id="email" name="email" placeholder="Email">
            </p>
            <br>
            <p>
        <label for=""></label>   
-         <input type="submit" class="btn" value="Add Task">
+         <input type="submit" class="btn" value="Request Info">
            </p>
       </form>
 </div>
@@ -138,10 +138,10 @@ h3 { text-align: center; }
     const reg_phone = document.querySelector('#reg_phone');  
     const reg_user_id = document.querySelector('#reg_user_id');  
 
-    const form_task = document.querySelector('#task-form');
-    const task_desc = document.querySelector('#task');
-    const task_type = document.querySelector('#type');
-    const task_user = document.querySelector('#user');
+    const form_product = document.querySelector('#product-form');
+    const product_product = document.querySelector('#product');
+    const product_role = document.querySelector('#role');
+    const product_email = document.querySelector('#email');
    
     const form_trial = document.querySelector('#trial-form');     
     const trial_product = document.querySelector('#trial_product');     
@@ -151,7 +151,7 @@ h3 { text-align: center; }
 
       //Add listeners
       form_reg.addEventListener('submit',addRegistration);
-      form_task.addEventListener('submit',addTask);
+      form_product.addEventListener('submit',addProduct);
       form_trial.addEventListener('submit',addTrial);
       
       
@@ -166,12 +166,12 @@ h3 { text-align: center; }
        });
         }
       
-    function addTask() {  
+    function addProduct() {  
        // add task call
-      analytics.track("Task Added", {
-        desc: task_desc.value,
-        type: task_type.value,
-        user: task_user.value
+        analytics.track("Product Info Requested", {
+        product: product_product.value,
+        role: product_role.value,
+        email: product_email.value
        });
         }
 
