@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,15 +16,15 @@
 
 form  { display: table;      }
 p     { display: table-row;  }
-label { display: table-cell; padding: 5px 10px 5px 10px; }
-input { display: table-cell; }
-    
+label { display: table-cell; width: 99px; padding: 5px 10px 5px 10px; text-align: right; }
+input { display: table-cell; width: 200px; }
+h3 { text-align: center; } 
     
 
-.form {
+.forms {
   border: 1px solid black;
   background-color: lightblue;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 25px;
   padding-left: 50px;
@@ -45,10 +46,9 @@ input { display: table-cell; }
   <h1>Ralph's Simple Site</h1>
 
     
-<div class="form">    
+<div class="forms">
 <h3>Registration</h3>  
    <form id="registration-form">
-      <div class="account-type">
            <p>
        <label for="reg_fname">First Name</label>
        <input type="text" id="reg_fname" name="reg_firstname" placeholder="First">
@@ -63,18 +63,16 @@ input { display: table-cell; }
            </p>
            <br>
            <p>
+       <label for=""></label>   
        <input type="submit" class="btn" value="Submit">
            </p>
-           </div>
      </form>
-    </div>
+</div>
            <br>  
            <br>
-   <div class="form">        
-   <h3 class="card-title">Task List</h3>
-          
+<div class="forms">
+   <h3>Task List</h3>
        <form id="task-form">
-           <div class="input-field">
            <p>
        <label for="task">Task</label>
        <input type="text" id="task"  name="task" placeholder="New Task">
@@ -89,18 +87,16 @@ input { display: table-cell; }
            </p>
            <br>
            <p>
+       <label for=""></label>   
          <input type="submit" class="btn" value="Add Task">
            </p>
-           </div>
       </form>
-    </div>       
+</div>
            <br>
            <br>
-    <div class="form">
-       <h3 class="card-title">Trial Request</h3>
-          
+<div class="forms">
+       <h3>Trial Request</h3>
        <form id="trial-form">
-           <div class="containers">
            <p>
           <label for="product">Trial Product</label> 
           <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
@@ -115,12 +111,11 @@ input { display: table-cell; }
             </p>
             <br>
             <p>
+       <label for=""></label>   
           <input type="submit" class="btn" value="Submit Trial Request">
             </p>
-            </div>
         </form>
-     </div>
-
+</div>
     <script>     
      
    //Define UI varibales
