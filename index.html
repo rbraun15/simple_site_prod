@@ -68,7 +68,7 @@ h3 { text-align: center; }
            </p>
 
             <p>   
-       <label for="reg_email">user_id</label>   
+       <label for="reg_email">User Id</label>   
        <input type="text" id="reg_user_id" name="reg_user_id" placeholder="user_id">
            </p>
 
@@ -109,7 +109,7 @@ h3 { text-align: center; }
        <h3>Trial Request</h3>
        <form id="trial-form">
            <p>
-          <label for="product">Trial Product</label> 
+          <label for="product">Product</label> 
           <input type="text" id="trial_product"  name="trial_product" placeholder="Trial Product">
             </p>
             <p>
@@ -117,8 +117,8 @@ h3 { text-align: center; }
           <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
             </p>
             <p>
-          <label for="trial_contact">Trial Contact</label>
-          <input type="text" id="trial_contact" name="trial_contact" placeholder="Trial Contact">
+          <label for="trial_contact">Contact Name</label>
+          <input type="text" id="trial_contact" name="trial_contact" placeholder="Contact Name">
             </p>
             <br>
             <p>
@@ -178,9 +178,9 @@ h3 { text-align: center; }
    function addTrial() {  
        // add trial call
       analytics.track("Trial Request", {
-     Trial_Product: trial_product.value,
-     Trial_Start_Date: trial_start_date.value,
-     Trial_Contact: trial_contact.value
+     trial_product: trial_product.value,
+     trial_start_Date: trial_start_date.value,
+     trial_contact: trial_contact.value
        });
         }  
       
