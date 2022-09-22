@@ -61,6 +61,17 @@ h3 { text-align: center; }
        <label for="reg_email">Email</label>   
        <input type="text" id="reg_email" name="reg_email" placeholder="Email">
            </p>
+
+            <p>   
+       <label for="reg_email">Phone</label>   
+       <input type="text" id="reg_phone" name="reg_phone" placeholder="Phone">
+           </p>
+
+            <p>   
+       <label for="reg_email">user_id</label>   
+       <input type="text" id="reg_user_id" name="reg_user_id" placeholder="user_id">
+           </p>
+
            <br>
            <p>
        <label for=""></label>   
@@ -124,6 +135,8 @@ h3 { text-align: center; }
     const reg_fname = document.querySelector('#reg_fname');
     const reg_lname = document.querySelector('#reg_lname');
     const reg_email = document.querySelector('#reg_email');  
+    const reg_phone = document.querySelector('#reg_phone');  
+    const reg_user_id = document.querySelector('#reg_user_id');  
 
     const form_task = document.querySelector('#task-form');
     const task_desc = document.querySelector('#task');
@@ -147,7 +160,9 @@ h3 { text-align: center; }
       analytics.identify("User Registered", {
         fname: reg_fname.value,
         lname: reg_lname.value,
-        email: reg_email.value
+        email: reg_email.value,
+        email: reg_phone.value,
+        email: reg_user_id.value
        });
         }
       
