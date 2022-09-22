@@ -120,6 +120,10 @@ h3 { text-align: center; }
           <label for="trial_contact">Contact Name</label>
           <input type="text" id="trial_contact" name="trial_contact" placeholder="Contact Name">
             </p>
+              <p>
+          <label for="trial_email">Contact Email</label>
+          <input type="text" id="trial_email" name="trial_email" placeholder="Contact Email">
+            </p>
             <br>
             <p>
        <label for=""></label>   
@@ -146,7 +150,8 @@ h3 { text-align: center; }
     const form_trial = document.querySelector('#trial-form');     
     const trial_product = document.querySelector('#trial_product');     
     const trial_start_date = document.querySelector('#trial_start_date');            
-    const trial_contact = document.querySelector('#trial_contact');     
+    const trial_contact = document.querySelector('#trial_contact');  
+    const trial_email = document.querySelector('#trial_email'); 
             
 
       //Add listeners
@@ -180,7 +185,9 @@ h3 { text-align: center; }
       analytics.track("Trial Request", {
      trial_product: trial_product.value,
      trial_start_Date: trial_start_date.value,
-     trial_contact: trial_contact.value
+     trial_contact: trial_contact.value,
+     trial_email: trial_email.value
+        
        });
         }  
       
