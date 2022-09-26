@@ -123,7 +123,7 @@ h3 { text-align: center; }
   </select>
             </p>
             <p>
-          <label for="trial_start_date">Trial Start Date 5</label>
+          <label for="trial_start_date">Trial Start Date 6</label>
           <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
             </p>
             <p>
@@ -204,17 +204,12 @@ today = mm + '/' + dd + '/' + yyyy ;
        // add product info requested 
 analytics.track("Product Info Requested", {
         product: product_product.value,
-        role: product_role.value
-       }, {
-       
-       externalIds: [
-    {
-      id: product_email.value,
-      type: 'email',
-      collection: 'users',
-      encoding: 'none'
+        role: product_role.value,
+  "context": {
+    "traits" : {
+      "email": roduct_email.value"
     }
-  ]
+  } 
        );
      }
    
