@@ -85,7 +85,7 @@ h3 { text-align: center; }
    <h3>Product Info Request</h3>
        <form id="product-form">
        <p>
-<label for="product">Select</label>
+<label for="product">Select Product</label>
   <select id="product" name=product">
     <option value=""></option>
     <option value="product_a"">Product A</option>
@@ -198,14 +198,20 @@ today = mm + '/' + dd + '/' + yyyy ;
        });
         }
       
-    function addProduct() {  
-       // add task call
-        analytics.track("Product Info Requested", {
+   analytics.track("Product Info Requested", {
         product: product_product.value,
-        role: product_role.value,
-        email: product_email.value
-       });
-        }
+        role: product_role.value
+       }, {
+       
+       externalIds: [
+    {
+      id: product_email.value,
+      type: 'email',
+      collection: 'users',
+      encoding: 'none'
+    }
+  ]
+       );
 
    function addTrial() {  
        // add trial call
