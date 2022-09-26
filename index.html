@@ -84,10 +84,15 @@ h3 { text-align: center; }
 <div class="forms">
    <h3>Product Info Request</h3>
        <form id="product-form">
-           <p>
-       <label for="product">Product</label>
-       <input type="text" id="product"  name="product" placeholder="Product">
-           </p>
+       <p>
+<label for="product">Select</label>
+  <select id="product" name=product">
+    <option value=""></option>
+    <option value="product_a"">Product A</option>
+    <option value="product_b"">Product B</option>
+    <option value="product_c"">Product C</option>
+  </select>
+            </p>
            <p>
        <label for="type">Role</label>
        <input type="text" id="role" name="role" placeholder="Role">
@@ -109,27 +114,13 @@ h3 { text-align: center; }
        <h3>Trial Request</h3>
        <form id="trial-form">
    <p>
-
 <label for="product">Select Product</label>
-
   <select id="trial_product" name=trial_product">
-
     <option value=""></option>
-
     <option value="product_a"">Product A</option>
-
     <option value="product_b"">Product B</option>
-
     <option value="product_c"">Product C</option>
-
   </select>
-
-
-
-
-
-
-
             </p>
             <p>
           <label for="trial_start_date">Trial Start Date</label>
