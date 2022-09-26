@@ -141,7 +141,24 @@ h3 { text-align: center; }
             </p>
         </form>
 </div>
-    <script>     
+    <script>   
+      
+      
+      
+      
+// Get Current Date      
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = String(today.getFullYear());
+today = mm + '/' + dd + '/' + yyyy ;
+
+
+      
+      
+      
+      
+      
      
    //Define UI varibales
 
@@ -196,7 +213,8 @@ h3 { text-align: center; }
      trial_product: trial_product.value,
      trial_start_Date: trial_start_date.value,
      trial_contact: trial_contact.value,
-     trial_email: trial_email.value
+     trial_email: trial_email.value,
+     trial_request_dt: today
         
        });
         }  
