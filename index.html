@@ -204,9 +204,17 @@ today = mm + '/' + dd + '/' + yyyy ;
        // add product info requested 
  analytics.track("Product Info Requested", {
         product: product_product.value,
-        role: product_role.value,
-        email: product_email.value
-       });
+        role: product_role.value
+       }, {
+       externalIds: [
+    {
+      id: product_email.value,
+      type: 'email',
+      collection: 'users',
+      encoding: 'none'
+    }
+  ]
+       );
      }
    
       
