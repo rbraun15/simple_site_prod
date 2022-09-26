@@ -123,7 +123,7 @@ h3 { text-align: center; }
   </select>
             </p>
             <p>
-          <label for="trial_start_date">Trial Start Date 1</label>
+          <label for="trial_start_date">Trial Start Date 2</label>
           <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
             </p>
             <p>
@@ -189,9 +189,7 @@ today = mm + '/' + dd + '/' + yyyy ;
       
      function addRegistration() {  
        // add identify call
-      analytics.identify("User Registered", 
-           userId: reg_user_id.value,              
-                         {
+      analytics.identify(reg_user_id.value, { 
         fname: reg_fname.value,
         lname: reg_lname.value,
         email: reg_email.value,
