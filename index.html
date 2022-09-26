@@ -198,9 +198,10 @@ today = mm + '/' + dd + '/' + yyyy ;
        });
         }
       
-   analytics.track("Product Info Requested", {
+analytics.track("Product Info Requested", {
         product: product_product.value,
-        role: product_role.value,
+        role: product_role.value
+       }, {
        
        externalIds: [
     {
@@ -208,10 +209,9 @@ today = mm + '/' + dd + '/' + yyyy ;
       type: 'email',
       collection: 'users',
       encoding: 'none'
-    },
+    }
   ]
-   }
-                  );
+       );
       
       
       
