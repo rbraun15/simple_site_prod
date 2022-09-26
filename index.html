@@ -123,7 +123,7 @@ h3 { text-align: center; }
   </select>
             </p>
             <p>
-          <label for="trial_start_date">Trial Start Date 6</label>
+          <label for="trial_start_date">Trial Start Date</label>
           <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
             </p>
             <p>
@@ -213,20 +213,22 @@ analytics.track("Product Info Requested", {
        );
      }
    
-      
-      
-      
+       
 
    function addTrial() {  
        // add trial call
       analytics.track("Trial Request", {
      trial_product: trial_product.value,
      trial_start_date: trial_start_date.value,
-     trial_contact: trial_contact.value,
-     email: trial_email.value,
-     trial_request_date: today
-        
-       });
+          trial_request_date: today,
+         "context": {
+    "traits" : {
+       trial_contact: trial_contact.value,
+     email: trial_email.value
+    }
+  } 
+}     
+       );
         }  
       
       </script>
