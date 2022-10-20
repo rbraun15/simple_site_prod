@@ -208,7 +208,7 @@ today = mm + '/' + dd + '/' + yyyy ;
       
       
       // Concat reg_fname & reg_lname to create reg_name for profiles
-      const reg_name = reg_fname.value + " " + reg_lname.value;
+      const reg_name = reg_fname.value + ' ' + reg_lname.value;
       
       
 
@@ -225,7 +225,7 @@ today = mm + '/' + dd + '/' + yyyy ;
      lname: reg_lname.value,
      phone: reg_phone.value,
      email: reg_email.value,
-     name: reg_name
+     name: reg_fname.value + ' ' + reg_lname.value
 });
         }
       
