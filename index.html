@@ -179,7 +179,8 @@ var yyyy = String(today.getFullYear());
 today = mm + '/' + dd + '/' + yyyy ;
 
 
-      
+// Concat reg_fname & reg_lname to create reg_name for profiles
+      reg_name = reg_fname.value + " " + reg_lname.value;
       
       
       
@@ -218,7 +219,8 @@ today = mm + '/' + dd + '/' + yyyy ;
      fname: reg_fname.value,
      lname: reg_lname.value,
      phone: reg_phone.value,
-     email: reg_email.value
+     email: reg_email.value,
+     name: reg_name
 });
         }
       
